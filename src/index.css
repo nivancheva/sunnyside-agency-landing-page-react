@@ -45,3 +45,51 @@ body {
     font-family: var(--ff-main);
     font-weight: var(--fw-600-main);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-accent);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links {
+    text-decoration: none;
+    color:inherit
+}
+
+.links:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.button {
+    border: 0;
+    text-transform: uppercase;
+    font-family: var(--ff-accent);
+    font-size: .9375rem;
+    font-weight: var(--fw-700-accent);
+    padding: .9375rem 1.875rem;
+    border-radius: 2rem;
+    background-color: var(--clr-yellow);
+    color: var(--clr-desaturated-blue);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+@media (min-width:800px) {
+    .button {
+        background-color: var(--clr-white);
+    }
+
+    .button:hover { 
+        background-color: rgb(126, 207, 245, 0.3); /* to change */
+    
+        color: var(--clr-white);
+    }
+}
