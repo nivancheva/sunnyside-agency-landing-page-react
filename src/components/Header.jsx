@@ -21,7 +21,7 @@ export default function Header() {
         <div className='header-wrapper'>
             <header className='header'>
                 <picture><img src={logo} alt='logo'/></picture>
-                <div className='navigation-bar flex-container'>
+                <div className={`navigation-bar flex-container ${menuVisible ? "" : "menu-hidden"}`}>
                     <nav>
                         <ul className='links-nav flex-container'>
                             {links.map((link, idx) => {
@@ -39,7 +39,7 @@ export default function Header() {
                 </button>           
             </header>
 
-            <div>
+            <div className='container '>
                 <h1>We are creatives</h1>
             </div>
         </div>
