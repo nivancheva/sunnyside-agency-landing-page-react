@@ -1,0 +1,24 @@
+.header-wrapper {
+    color: var(--clr-white);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media (min-width:800px) {
+    .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 2.9375rem;
+    }
+
+    .button-toggle {
+        display: none;
+    }
+}
+

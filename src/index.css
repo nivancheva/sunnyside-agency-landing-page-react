@@ -44,10 +44,21 @@ body {
     font-size: var(--fz-main);
     font-family: var(--ff-main);
     font-weight: var(--fw-600-main);
+    background-color: red;
+}
+
+.container {
+    padding: 4rem 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-accent);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 6.25px;
 }
 
 ul {
@@ -81,8 +92,31 @@ ul {
     cursor: pointer;
 }
 
+.button-toggle, .button-toggle-cliked  {
+    border: 0;
+    background-color: inherit;
+}
+
+.button-toggle-cliked {
+    opacity: .7;
+}
+
+@media (max-width:799px) {
+    body {
+        text-align: center;
+    }
+}
 
 @media (min-width:800px) {
+    .container {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 8.75px;
+    }
+
     .button {
         background-color: var(--clr-white);
     }
