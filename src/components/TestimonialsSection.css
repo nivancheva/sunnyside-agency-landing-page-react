@@ -1,0 +1,10 @@
+.testimonial {
+    text-align: center;
+}
+
+.testimonial-header {
+    letter-spacing: 5px;
+    color: var(--clr-grayish-blue);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}

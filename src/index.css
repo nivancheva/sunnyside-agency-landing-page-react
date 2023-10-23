@@ -64,6 +64,10 @@ ul {
     padding: 0;
 }
 
+.grid {
+    display: grid;
+}
+
 .links {
     text-decoration: none;
     color: inherit
@@ -129,5 +133,10 @@ ul {
         background-color:  hsla(0, 0%, 100%, 0.37); /* to change */
     
         color: var(--clr-white);
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
     }
 }
