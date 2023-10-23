@@ -22,9 +22,10 @@
 }
 
 .footer-link:hover, 
-.footer-links_social:hover {
+.social_link:hover {
     cursor: pointer;
     color: var(--clr-white);
+    fill: var(--clr-white);
 }
 
 @media (min-width:600px) {
