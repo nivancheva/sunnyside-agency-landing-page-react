@@ -1,0 +1,15 @@
+.images-section {
+    display: grid;
+}
+
+@media (max-width:749px) {
+    .images-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:750px) {
+    .images-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
