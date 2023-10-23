@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../images/logo.svg';
+import arrowImage from '../images/icon-arrow-down.svg';
 import menuHamburder from '../images/icon-hamburger.svg';
 import { useState } from 'react';
 
@@ -39,8 +40,9 @@ export default function Header() {
                 </button>           
             </header>
 
-            <div className='container '>
+            <div className='container'>
                 <h1>We are creatives</h1>
+                <img className="arrow-img" src={arrowImage} alt="arrow down" />
             </div>
         </div>
     )
