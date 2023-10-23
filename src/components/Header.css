@@ -5,6 +5,9 @@
     background-position: center;
     background-size: cover;
     padding-bottom: 18.5rem;
+
+    height: 44.5rem;
+    max-height: 100%;
 }
 
 .header {
@@ -22,16 +25,31 @@
     gap: 2rem;
 }
 
-@media (max-width:599px) {
+@media (max-width:749px) {
     .navigation-bar {
         position: absolute;
-        top: 5.125rem;
+        top: 6.75rem;
         left: 50%;
         transform: translate(-50%);
 
         background-color: var(--clr-white);
         color: var(--clr-dark-grayish-blue);
         padding: 2.5rem 5.9375rem;
+    }
+
+    .navigation-bar::after {
+        content: "";
+        position: absolute;
+        margin-top: -25%;
+        right: 0;
+        width: 0;
+        height: 0;
+        transform: translate(0, 10%);
+        background-color: transparent;
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-top: 40px solid transparent;
+        border-right: 40px solid var(--clr-white);
     }
 
     .menu-hidden {
@@ -43,7 +61,7 @@
     }
 }
 
-@media (min-width:600px) {
+@media (min-width:750px) {
     .header-wrapper {
         background: url('./public/images/desktop/image-header.jpg');
         background-repeat: no-repeat;

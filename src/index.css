@@ -44,6 +44,8 @@ body {
     font-size: var(--fz-main);
     font-family: var(--ff-main);
     font-weight: var(--fw-600-main);
+
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,13 +92,14 @@ ul {
 .button-toggle, .button-toggle-cliked  {
     border: 0;
     background-color: inherit;
+    padding: 0;
 }
 
 .button-toggle-cliked {
     opacity: .7;
 }
 
-@media (max-width:599px) {
+@media (max-width:749px) {
     body {
         text-align: center;
     }
@@ -107,7 +110,7 @@ ul {
     
 }
 
-@media (min-width:600px) {
+@media (min-width:750px) {
     /* .container {
         padding: 2.125rem 2.5rem 0;
     } */
