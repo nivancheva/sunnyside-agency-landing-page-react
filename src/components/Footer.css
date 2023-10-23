@@ -21,6 +21,10 @@
     margin-top: 3rem;
 }
 
+.social_link {
+    fill: #2C7566;
+}
+
 .footer-link:hover, 
 .social_link:hover {
     cursor: pointer;
