@@ -3,7 +3,7 @@ import './SectionOne.css';
 export default function SectionOne() {
     return (
         <div className='grid col-2'>
-            <picture className='egg_img'>
+            <picture className='egg_img main-section_img'>
                 <source srcSet="./images/desktop/image-transform.jpg" media="(min-width: 750px)" />
                 <img src="./images/mobile/image-transform.jpg"/>
             </picture>

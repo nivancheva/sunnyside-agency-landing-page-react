@@ -3,7 +3,7 @@ import './SectionTwo.css';
 export default function SectionTwo() {
     return (
         <div className='grid col-2'>
-            <picture className='glass_img'>
+            <picture className='glass_img main-section_img'>
                 <source srcSet="./images/desktop/image-stand-out.jpg" media="(min-width: 750px)" />
                 <img src="./images/mobile/image-stand-out.jpg"/>
             </picture>
