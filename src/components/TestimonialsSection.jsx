@@ -19,13 +19,15 @@ export default function TestimonialsSection() {
         <div className='testimonial container'>
             <h2 className='testimonial-header'>Client Testimonials</h2>
 
-            <div className='grid cols-3'>
+            <div className='grid cols-3 testimonials'>
                 {testimonials.map((testimonial, idx) => 
-                    <div key={idx}>
-                        <img src={testimonial.image}/>
-                        <p>{testimonial.text}</p>
-                        <p>{testimonial.author}</p>
-                        <p>{testimonial.position}</p>
+                    <div key={idx} className='grid cards'>
+                        <img className='testimonial_img' src={testimonial.image}/>
+                        <p className='testimonial_text'>{testimonial.text}</p>
+                        <div>
+                            <p className='testimonial_author'>{testimonial.author}</p>
+                            <p>{testimonial.position}</p>
+                        </div>
                     </div>
                 )}
             </div>
