@@ -1,0 +1,3 @@
+.red::after {
+    background-color: var(--clr-red);
+}

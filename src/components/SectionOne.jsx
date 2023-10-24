@@ -11,7 +11,7 @@ export default function SectionOne() {
             <div className='main-container'>
                 <h2>Transform your brand</h2>
                 <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                <a>LEARN MORE</a>
+                <a className='link' href='#'>Learn more</a>
             </div>
         </div>
     )
