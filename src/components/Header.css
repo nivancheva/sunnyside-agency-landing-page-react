@@ -33,13 +33,14 @@
     .navigation-bar {
         position: absolute;
         top: 6.75rem;
-        left: 50%;
-        transform: translate(-50%);
+        right: 1.5rem;
         z-index: 100;
 
         background-color: var(--clr-white);
         color: var(--clr-dark-grayish-blue);
-        padding: 2.5rem 5.9375rem;
+        padding: 2.5rem 0;
+        width: 85%;
+        max-width: 329px;
     }
 
     .navigation-bar::after {
